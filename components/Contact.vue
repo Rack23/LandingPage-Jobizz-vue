@@ -1,6 +1,7 @@
-<template><div></div>
-  <!-- <div data-tf-widget="voLeuDNY" style="width:100%;height:400px;"></div> <script src="//embed.typeform.com/next/embed.js"></script>-->
-
+<template>
+<div id="contact">
+  <div data-tf-widget="voLeuDNY" style="width:100%;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+</div>
 </template>
 
 

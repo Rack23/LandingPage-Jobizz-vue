@@ -1,25 +1,33 @@
 <template>
+<div>
   <div class="Hero container">
-      <div class="text-container">
-      <h1>
-          La première plateforme de petit job et d'extra.
-      </h1>
-      <p class="snippet">
-          Nous somme la premiere plateforme aidant les utilisateurs à trouver des petits jobs et des extra rapidement et proche d'eux.
-          <br><br>
-          Téléchargez l'application ou continuez à visiter notre site pour en savoir d'avantage sur Jobizz.
-      </p>
-      <a href="https://testflight.apple.com/join/Oxi8gyvA/">
-      <button class="button btn">  Télécharger l'application</button>
-      </a>
-      <NuxtLink to="/pres">
+    <div class="text-container">
+    <h1>
+        La première plateforme de petit job et d'extra.
+    </h1>
+    <p class="snippet">
+        Nous somme la premiere plateforme aidant les utilisateurs à trouver des petits jobs et des extra rapidement et proche d'eux.
+        <br><br>
+        Téléchargez l'application ou continuez à visiter notre site pour en savoir d'avantage sur Jobizz.
+    </p>
+    <a href="https://testflight.apple.com/join/Oxi8gyvA/">
+      <button class="button btn">Télécharger</button>
+    </a>
+    <NuxtLink to="/pres">
       <button class="button2 btn">  En savoir plus</button>
-      </NuxtLink>
-      </div>
-      <img src="../assets/sect1.png" alt="" class="image">
-      
+    </NuxtLink>
+    </div>
+    <img src="../assets/sect1.png" alt="" class="image">
   </div>
-</template> 
+  <Pres />
+  <Features />
+  <AboutUs />
+  <Team />
+  <Contact />
+  <Footers />
+</div>
+
+</template>
 
 <script>
 export default {
@@ -29,17 +37,17 @@ export default {
 
 <style scoped>
     .Hero {
-        height: 50vh;
-        position: relative;
-        display: flex;
-        padding: 5rem 0;
-        align-items: flex-start;
-        justify-content: space-between;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      position: relative;
+      display: flex;
+      padding: 1rem 0;
+      align-items: flex-start;
+      justify-content: space-between;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+
     .text-container {
         width: 80%;
-        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
     .header {
         font-weight: 900;

@@ -1,4 +1,4 @@
-<template> 
+<template>
 <div class="fluid-container footer">
     <p class="text-center">
         Copyright & copy 2018, ABC Marketing. All Rights Reserved.
@@ -15,7 +15,7 @@ export default {
 <style scoped>
 
 .fluid-container.footer{
-  background: blue;
+  background: #7B6AF5;
 }
 .fluid-container.footer > *:last-child {
     margin-bottom: 0px;

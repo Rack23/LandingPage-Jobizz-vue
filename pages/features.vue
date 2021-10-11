@@ -1,7 +1,10 @@
 <template>
-<div class="container">
+<div>
     <NavBar/>
+    <img class="vector" width="900" src="~/assets/Frame.png"/>
+    <div class="container">
     <Features/>
+    </div>
     </div>
 </template>
 
@@ -19,5 +22,7 @@ export default {
 </script>
 
 <style>
-
+.vector {
+  position: absolute;
+}
 </style>

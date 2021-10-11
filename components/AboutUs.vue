@@ -1,9 +1,8 @@
 <template>
-  <div id="pres" class="Hero container">
-    <img src="../assets/app-user.svg" alt="" class="image">
+  <div id="about-us" class="Hero container">
     <div class="text-container">
     <h1>
-        Comment est ce que nous pouvons vous aider à trouver un job ou un extra ?
+        A propos de nous
     </h1>
     <p class="snippet">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -14,6 +13,7 @@
     <NuxtLink  to="/features">
     <button class="button btn"> En savoir plus</button></NuxtLink>
     </div>
+    <img src="../assets/team.svg" alt="" class="image">
   </div>
 </template>
 
