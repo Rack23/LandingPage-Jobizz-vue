@@ -22,6 +22,17 @@
   <Pres />
   <Features />
   <AboutUs />
+  <div id="timeline" class="container page-timeline">
+    <img src="../assets/phone1.png" alt="" class="image" width="950" height="450" >
+    <div class="page-timeline__text-container">
+      <Timeline
+      :timeline-items="dataTimeline"
+      :message-when-no-items="messageWhenNoItems"
+      :show-day-and-month="true"
+      order="asc"
+    />
+    </div>
+  </div>
   <Team />
   <Contact />
   <Footers />
@@ -30,12 +41,62 @@
 </template>
 
 <script>
-export default {
+import Timeline from 'timeline-vuejs'
+import "../node_modules/timeline-vuejs/dist/timeline-vuejs.css";
 
-}
+export default {
+  components: {
+    Timeline
+  },
+  data: () => ({
+    messageWhenNoItems: "There arent items",
+    dataTimeline: [
+      {
+        from: new Date(2019, 5, 22),
+        title: "Septembre 2019",
+        showDayAndMonth: true,
+        color: '#e74c3c',
+        description:
+          "Creation du projet"
+      },
+      {
+        from: new Date(2019, 12, 20),
+        title: "Decembre 2019",
+        showDayAndMonth: true,
+        color: '#e74c3c',
+        description:
+          "Creation du MVP"
+      },
+      {
+        from: new Date(2020, 4, 20),
+      title: "Avril 2020",
+        showDayAndMonth: true,
+        color: '#e74c3c',
+        description:
+          "Premier Prototype"
+      },
+      {
+        from: new Date(2021, 10, 10),
+        title: "Aujourd'hui",
+        showDayAndMonth: true,
+        color: '#7C6CF5',
+        description:
+          "Beta Mobile et Web"
+      },
+      {
+        from: new Date(2022, 4, 10),
+        title: "Dans 6 mois",
+        showDayAndMonth: true,
+        color: '#e18373',
+        description:
+          "Prochaine fonctionnalités"
+      }
+    ]
+  })
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .Hero {
       position: relative;
       display: flex;
@@ -107,5 +168,16 @@ export default {
         .Hero {
             height: 40vh;
         }
+    }
+
+    .page-timeline {
+      position: relative;
+      display: flex;
+      padding: 0rem 0;
+
+      &__text-container {
+        width: 100%;
+        margin-left: 15%;
+      }
     }
 </style>

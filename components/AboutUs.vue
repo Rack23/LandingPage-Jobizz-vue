@@ -33,6 +33,7 @@ export default {
         align-items: flex-start;
         justify-content: space-between;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-bottom: 10rem;
     }
     .text-container {
         width: 50%;

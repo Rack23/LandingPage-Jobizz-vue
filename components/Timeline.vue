@@ -4,12 +4,11 @@
       <Timeline
       :timeline-items="dataTimeline"
       :message-when-no-items="messageWhenNoItems"
-      :unique-year="true"
       :show-day-and-month="true"
       order="asc"
     />
     </div>
-    <img src="../assets/sect1.png" alt="" class="image" width="950" height="450" >
+    <!-- <img src="../assets/sect1.png" alt="" class="image" width="950" height="450" > -->
   </div>
 </template>
 
@@ -68,7 +67,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .page-timeline {
   position: relative;
