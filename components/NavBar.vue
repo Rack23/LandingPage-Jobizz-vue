@@ -10,10 +10,10 @@
       </b-navbar-brand>
       <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="navbar ml-auto" >
-        <b-nav-item><NuxtLink class="text-color" to="/">Home</NuxtLink></b-nav-item>
+        <b-nav-item><NuxtLink class="text-color" to="/">Accueil</NuxtLink></b-nav-item>
         <b-nav-item><NuxtLink class="text-color" to="#pres">Présentation</NuxtLink></b-nav-item>
         <b-nav-item><NuxtLink class="text-color" to="#features">Fonctionnalité</NuxtLink></b-nav-item>
-        <b-nav-item><NuxtLink class="text-color" to="#timeline">Progession</NuxtLink></b-nav-item>
+        <b-nav-item><NuxtLink class="text-color" to="#timeline">Progression</NuxtLink></b-nav-item>
         <b-nav-item><NuxtLink class="text-color" to="#team">Equipe</NuxtLink></b-nav-item>
         <b-nav-item><NuxtLink class="text-color" to="#contact">Contact</NuxtLink></b-nav-item>
          <b-nav-item href="http://51.103.25.25:3000/#/User/Register">
